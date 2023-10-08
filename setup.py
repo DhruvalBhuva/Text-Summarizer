@@ -1,33 +1,30 @@
 import setuptools
 
 # This all is for the PyPI package
-with open("README.md", "r", encoding="utf-8") as fh:
-    long_description = fh.read()
+with open("README.md", "r", encoding="utf-8") as f:
+    long_description = f.read()
 
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Text-Summarizer"
-AUTHOR_NAME = "Dhruval Bhuva"
+REPO_NAME = "Text-Summarizer-Project"
+AUTHOR_USER_NAME = "entbappy"
 SRC_REPO = "textSummarizer"
-AUTHOR_EMAIL = "dhruvalbhuva2000@gmail.com"
+AUTHOR_EMAIL = "entbappy73@gmail.com"
+
 
 setuptools.setup(
-    name=REPO_NAME,
+    name=SRC_REPO,
     version=__version__,
-    author=AUTHOR_NAME,
+    author=AUTHOR_USER_NAME,
     author_email=AUTHOR_EMAIL,
-    description="Text Summarizer",
+    description="A small python package for NLP app",
     long_description=long_description,
-    long_description_content_type="text/markdown",
-    url=f"",
+    long_description_content="text/markdown",
+    url=f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}",
     project_urls={
-        "Bug Tracker": f"",
+        "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
-    classifiers=[
-        "Programming Language :: Python :: 3",
-        "Operating System :: OS Independent",
-    ],
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src"),
+    packages=setuptools.find_packages(where="src")
 )
