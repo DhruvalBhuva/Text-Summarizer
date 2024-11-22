@@ -1,0 +1,5 @@
+# ==> Configbox: It allow us to read value as "d.key" instead of "d["key"]"
+# ==> ensure_annotation: It don't allow us to pass diffrent dtype params and gives error, just to prevent big messup
+
+# Video Link
+https://www.youtube.com/watch?v=p7V4Aa7qEpw

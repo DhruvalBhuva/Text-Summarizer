@@ -6,6 +6,10 @@ __pycache__/
 # C extensions
 *.so
 
+artifacts/
+
+src/Text_Summarizer.egg-info
+
 # Distribution / packaging
 .Python
 build/
